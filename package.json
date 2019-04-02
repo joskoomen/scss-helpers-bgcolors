@@ -1,0 +1,25 @@
+{
+    "name": "@eheroes/scss-helpers-bgcolors",
+    "version": "1.0.4",
+    "description": "Front-end Helpers Package for Bg Color",
+    "main": "src/_index.scss",
+    "author": "Jos Koomen <jos@e-heroes.nl>",
+    "license": "MIT",
+    "devDependencies": {
+        "@eheroes/scss-core": "^1.*"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/e-heroes/scss-helpers-bgcolors.git"
+    },
+    "keywords": [
+        "e-heroes",
+        "core",
+        "helpers",
+        "boilerplate"
+    ],
+    "homepage": "https://bitbucket.org/e-heroes/scss-helpers-bgcolors.git#readme"
+}
