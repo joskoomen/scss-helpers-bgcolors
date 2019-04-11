@@ -1,5 +1,5 @@
 {
-    "name": "@eheroes/scss-helpers-bgcolors",
+    "name": "@joskoomen/scss-helpers-bgcolors",
     "version": "1.0.0",
     "description": "Front-end Helpers Package for background-color css setting",
     "main": "src/_index.scss",
