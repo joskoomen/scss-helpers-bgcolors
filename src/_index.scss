@@ -10,12 +10,12 @@ $helpers-bgcolors-class-prefix: 'bg-c' !default;
 
 @mixin _create-bgcolor-class($prefix, $color, $hex, $hover:false) {
   .#{$prefix}-#{$color} {
-    background-color: $hex;
+    background-color: $hex !important;
   }
   
   @if $hover {
     .#{$prefix}-hover-#{$color}:hover {
-      background-color: $hex;
+      background-color: $hex !important;
     }
   }
 }
@@ -23,11 +23,10 @@ $helpers-bgcolors-class-prefix: 'bg-c' !default;
 @mixin helpers-bgcolors($responsive:false, $hover-classes : false) {
   @if $responsive {
     @each $classname in $breakpoint-classes {
-      @each $color in $helpers-bgcolors {
-        $key: nth($color, 1);
-        $hex: nth($color, 2);
-        
-        @include breakpoint($classname) {
+      @include breakpoint($classname) {
+        @each $color in $helpers-bgcolors {
+          $key: nth($color, 1);
+          $hex: nth($color, 2);
           // .xs-bg-c-white // .xs-bg-c-hover-primary
           @include _create-bgcolor-class(#{$classname}-#{$helpers-bgcolors-class-prefix}, $key, $hex, $hover-classes);
         }
